@@ -1,5 +1,8 @@
-import SelectCountry from "@/app/_components/SelectCountry";
+//import SelectCountry from "@/app/_components/SelectCountry";
 
+export const metadata = {
+  title: "Update profile",
+};
 export default function Page() {
   // CHANGE
   const countryFlag = "pt.jpg";
@@ -33,7 +36,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="space-y-2">
+        {/* <div className="space-y-2">
           <div className="flex items-center justify-between">
             <label htmlFor="nationality">Where are you from?</label>
             <img
@@ -49,7 +52,7 @@ export default function Page() {
             className="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm"
             defaultCountry={nationality}
           />
-        </div>
+        </div> */}
 
         <div className="space-y-2">
           <label htmlFor="nationalID">National ID number</label>
