@@ -1,5 +1,8 @@
+"use client";
+import { useReservation } from "./ReservationContext";
+
 function ReservationForm({ cabin }) {
-  // CHANGE
+  const { range } = useReservation();
   const maxCapacity = cabin.maxCapacity;
 
   return (
@@ -38,6 +41,9 @@ function ReservationForm({ cabin }) {
             ))}
           </select>
         </div>
+        <p>
+          {String(range.from)} to {String(range.to)}
+        </p>
 
         <div className="space-y-2">
           <label htmlFor="observations">
